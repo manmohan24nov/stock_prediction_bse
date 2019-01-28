@@ -1,1 +1,1 @@
-predicting one or more months stock by using lstm.
+stock prediction using lstm.
