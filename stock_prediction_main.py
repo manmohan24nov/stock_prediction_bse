@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # importing local functions
-import stock_raw_data
+import stock_raw_data_source
 
 #creating dataframe
 stock_name_local = 'adani_power'
-stock_data = stock_raw_data.stock_data(stock_name_local).stock_data_func()
+stock_data = stock_raw_data_source.stock_data(stock_name_local).stock_data_func()
 stock_data = stock_data[['new_date','Open Price']]
 dataset_train = stock_data.iloc[:2300]
 # print(dataset_train.shape())
@@ -73,8 +73,9 @@ regressor.add(Dense(units = 1))
 regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
 # Fitting the RNN to the Training set
-regressor.fit(X_train, y_train, epochs = 55, batch_size = 32)
+regressor.fit(X_train, y_train, epochs = 100, batch_size = 35)
 
+regressor.save('e55_b32_optadam.h5')
 
 
 # Part 3 - Making the predictions and visualising the results
@@ -87,7 +88,7 @@ dataset_test = stock_data.iloc[2301:]
 real_stock_price = dataset_test.iloc[:, 1:2].values
 
 # Getting the predicted stock price of 2017
-dataset_total = pd.concat((dataset_train['Open Price'], dataset_test['Open Price']), axis = 0)
+dataset_total = pd.concat((dataset_train['Open Price'], dataset_test['Open Price']), axis=0)
 
 inputs = dataset_total[len(dataset_total) - len(dataset_test) - 60:].values
 inputs = inputs.reshape(-1,1)
