@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../stock_analysis/.idea/stock_analysis.iml" filepath="$PROJECT_DIR$/../stock_analysis/.idea/stock_analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/stock_mining.iml" filepath="$PROJECT_DIR$/.idea/stock_mining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../time_series_analysis/.idea/time_series_analysis.iml" filepath="$PROJECT_DIR$/../time_series_analysis/.idea/time_series_analysis.iml" />
+    </modules>
+  </component>
+</project>

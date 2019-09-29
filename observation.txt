@@ -1,0 +1,18 @@
+--find time frame of increase and decrease of stocks, get the average time of increase and decrease
+--use clusttering to find the pattern whether stocks increase or decrease
+------how much time stocks take to find out it will increase or decrease
+------------apply both buy and sell of stocks...distance between buy and sell will be calculated by taking average after 10 am
+
+---may 22 2019 observation on sail stocks........
+----stock didn't drop significant as drop by sensex indication it will go up
+----if stock lower is not matched by lower of stock during initial period then it will go up
+
+
+---timing--
+10:00--- price will increase trend(buy) or decrease trend(sell)
+10:30--- price will be on peak change in stock will take place (wait for confirmation)---
+
+have both sell and buy trigger at same time for calculation--- if sell and buy not meet don't initiate the trade---
+---it has
+
+---watch time and movement of shares before putting for buy or sale
